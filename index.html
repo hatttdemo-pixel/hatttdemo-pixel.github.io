@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="About Starlink ITC Azure Trial, a personal research tool for private ephemeris archiving."><title>Starlink ITC Azure Trial</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="brand" href="index.html">Starlink ITC Azure Trial</a><nav aria-label="Main"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></nav></header>
+<main>
+<div class="eyebrow">Personal research tool</div><h1>Private ephemeris archiving.</h1>
+<p class="intro">Starlink ITC Azure Trial collects publicly available Modified ITC satellite ephemeris files and saves research copies in the owner's private Google Drive.</p>
+<p>The collector runs on the owner's Azure server. It preserves source version names, extracts state vectors, compresses files, checks uploaded file metadata, and records collection status. The project name retains “Trial” from its initial deployment; collection may continue while the owner keeps it enabled.</p>
+<h2>Why it requests Google Drive access</h2>
+<p>The desktop authorization flow requests only <code>https://www.googleapis.com/auth/drive.file</code>. This permits access to files the app creates or files the user explicitly makes available to the app. The collector uses this access to create its private archive folders, upload ephemeris files and status records, and verify file sizes and checksums. It may check the authorized account and remaining storage to confirm the destination is usable.</p>
+<div class="note">This website provides application information. It has no Google sign-in form and does not display private archives or credentials. Authorization is completed on Google's own consent page.</div>
+<h2>Owner and availability</h2>
+<p>Maintained by <a href="https://github.com/hatttdemo-pixel">hatttdemo-pixel</a> for personal research. This is not a public collection service. It is an independent project, unaffiliated with SpaceX, Starlink, Google, or Microsoft.</p>
+<p>Read the <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms of use</a> before authorizing the tool.</p>
+<hr>
+<section lang="zh-CN"><h2>中文说明</h2><p>这是个人研究用星历归档工具：在自己的 Azure 服务器采集公开的 Modified ITC 星历，压缩后写入自己的私有 Google Drive。它只请求 <code>drive.file</code> 权限，用于管理本应用创建或用户明确提供给它的文件。此说明站不提供登录，不展示私有归档和凭据。</p></section>
+</main>
+<footer>Starlink ITC Azure Trial · Maintainer: <a href="https://github.com/hatttdemo-pixel">hatttdemo-pixel</a> · Updated 2026-10-31</footer>
+</body></html>
